@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* CONTAINER */
+.appContainer {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #000000, #001a0d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* NAV */
+.Nav {
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(14, 14, 14, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.15);
+}
+
+.Nav h1 {
+  font-size: 32px;
+  color: #00ff00;
+  text-shadow: 1px 2px 5px rgba(151, 148, 148, 0.4);
+}
+
+.Nav .Icon {
+  font-size: 30px;
+  color: #00d5ff;
+}
+
+/* SEED BOX */
+.SeedC {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 40px;
+  background: rgba(0, 50, 20, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 255, 0, 0.1);
+}
+
+/* TEXTAREA */
+textarea {
+  width: 100%;
+  background: rgba(0, 30, 10, 0.7);
+  border: 2px solid #00ff1a;
+  color: #00ff1a;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  resize: none;
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+.Seedbtn,
+.Seedbtn2,
+.Seedbtn3,
+.Toglebtn {
+  padding: 10px 20px;
+  background: rgba(0, 255, 0, 0.9);
+  color: black;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  transition: transform 0.2s ease;
+}
+
+.Seedbtn:hover,
+.Seedbtn2:hover,
+.Seedbtn3:hover,
+.Toglebtn:hover {
+  transform: scale(1.05);
+}
+
+/* PHRASES */
+.Phrases {
+  width: 90%;
+  max-width: 900px;
+  margin-top: 40px;
+  background: rgba(27, 28, 27, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.singlephrase {
+  background: rgba(4, 36, 1, 0.6);
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: 2px solid greenyellow;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+}
+
+/* WALLETS */
+.Wallets {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+
+.Wallets h1 {
+  background: rgba(0, 41, 10, 0.6);
+  padding: 8px 16px;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 22px;
+}
+
+.Eachkey {
+  background: rgba(8, 38, 0, 0.5);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.Publicp {
+  font-family: 'Fira Code', monospace;
+  background: rgba(128, 255, 0, 0.8);
+  color: #00320a;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.Privatep {
+  font-family: 'Fira Code', monospace;
+  background: rgba(0, 28, 8, 0.8);
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .Nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .Nav h1,
+  .Nav .Icon {
+    font-size: 26px;
+  }
+
+  .Seedbtn3 {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .Publicp,
+  .Privatep {
+    font-size: 14px;
+  }
+}
